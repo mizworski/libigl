@@ -7,8 +7,8 @@ message(STATUS "Third-party: creating target 'CoMISo::CoMISo'")
 include(FetchContent)
 FetchContent_Declare(
     comiso
-    GIT_REPOSITORY https://github.com/libigl/CoMISo.git
-    GIT_TAG 536440e714f412e7ef6c0b96b90ba37b1531bb39
+    GIT_REPOSITORY https://github.com/mizworski/CoMISo.git
+    GIT_TAG 24058e041effcf76194a4ef5fabffb62acd9d9a3
 )
 
 include(eigen)

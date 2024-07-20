@@ -26,9 +26,9 @@ igl_include_optional(xml)
 igl_include_optional(copyleft core)
 #igl_include_optional(copyleft cgal)
 igl_include_optional(copyleft comiso)
-igl_include_optional(copyleft tetgen)
+#igl_include_optional(copyleft tetgen)
 
 # Libigl restricted modules
-igl_include_optional(restricted matlab)
-igl_include_optional(restricted mosek)
-igl_include_optional(restricted triangle)
+#igl_include_optional(restricted matlab)
+#igl_include_optional(restricted mosek)
+#igl_include_optional(restricted triangle)

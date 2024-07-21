@@ -16,16 +16,16 @@ file(GLOB INC_FILES "${libigl_SOURCE_DIR}/include/igl/*.h")
 file(GLOB SRC_FILES "${libigl_SOURCE_DIR}/include/igl/*.cpp")
 igl_target_sources(igl_core ${INC_FILES} ${SRC_FILES})
 
-# 4. Install target & headers
-igl_install(igl_core ${INC_FILES} ${SRC_FILES})
-
-# 5. Dependencies
+# 4. Dependencies
 include(eigen)
 find_package(Threads REQUIRED)
 target_link_libraries(igl_core ${IGL_SCOPE}
     Eigen3::Eigen
     Threads::Threads
 )
+
+# 5. Install target & headers
+igl_install(igl_core ${INC_FILES} ${SRC_FILES})
 
 # 6. Unit tests
 file(GLOB SRC_FILES "${libigl_SOURCE_DIR}/tests/include/igl/*.cpp")

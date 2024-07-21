@@ -95,11 +95,7 @@ option(LIBIGL_INSTALL          "Enable installation of libigl targets" ${LIBIGL_
 # USE_STATIC_LIBRARY speeds up the generation of multiple binaries,
 # at the cost of a longer initial compilation time
 # (by default, static build is off since libigl is a header-only library)
-include(CMakePrintHelpers)
-
-cmake_print_variables(LIBIGL_TOPLEVEL_PROJECT)
 option(LIBIGL_USE_STATIC_LIBRARY "Use libigl as static library" ${LIBIGL_TOPLEVEL_PROJECT})
-cmake_print_variables(LIBIGL_USE_STATIC_LIBRARY)
 
 # Permissive modules. These modules are available under MPL2 license, and their dependencies are available
 # under a permissive or public domain license.

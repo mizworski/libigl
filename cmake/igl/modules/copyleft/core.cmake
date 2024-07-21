@@ -17,3 +17,5 @@ igl_target_sources(igl_copyleft_core ${INC_FILES} ${SRC_FILES})
 target_link_libraries(igl_copyleft_core ${IGL_SCOPE}
     igl::core
 )
+
+igl_install(igl_copyleft_core ${INC_FILES} ${SRC_FILES})

@@ -23,6 +23,8 @@ target_link_libraries(igl_copyleft_cgal ${IGL_SCOPE}
     CGAL::CGAL_Core
 )
 
+igl_install(igl_copyleft_cgal ${INC_FILES} ${SRC_FILES})
+
 # 5. Unit tests
 file(GLOB SRC_FILES
     "${libigl_SOURCE_DIR}/tests/include/igl/copyleft/boolean/*.cpp"

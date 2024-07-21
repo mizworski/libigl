@@ -22,6 +22,8 @@ target_link_libraries(igl_glfw ${IGL_SCOPE}
     glfw::glfw
 )
 
+igl_install(glfw ${INC_FILES} ${SRC_FILES})
+
 # 5. Unit tests
 if(LIBIGL_GLFW_TESTS)
   file(GLOB SRC_FILES "${libigl_SOURCE_DIR}/tests/include/igl/opengl/glfw/*.cpp")

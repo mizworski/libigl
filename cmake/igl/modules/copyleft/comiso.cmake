@@ -19,7 +19,7 @@ igl_include(copyleft core)
 target_link_libraries(igl_copyleft_comiso ${IGL_SCOPE}
     igl::core
     igl_copyleft::core
-#    CoMISo::CoMISo
+    CoMISo::CoMISo
 )
 
 igl_install(igl_copyleft_comiso ${INC_FILES} ${SRC_FILES})

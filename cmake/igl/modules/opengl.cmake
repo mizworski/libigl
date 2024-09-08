@@ -22,3 +22,6 @@ target_link_libraries(igl_opengl ${IGL_SCOPE}
     # Link against OpenGL::OpenGL if available, or fallback to OpenGL::GL
     $<IF:$<TARGET_EXISTS:OpenGL::OpenGL>,OpenGL::OpenGL,OpenGL::GL>
 )
+
+# 5. Install target & headers
+#igl_install(igl_opengl ${INC_FILES} ${SRC_FILES})

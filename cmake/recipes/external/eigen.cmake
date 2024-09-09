@@ -36,6 +36,8 @@ if(WIN32 AND eigen_SOURCE_DIR)
 endif()
 
 # Install rules
+
+message(STATUS "Eigen Source Dir: ${eigen_SOURCE_DIR}")
 set(CMAKE_INSTALL_DEFAULT_COMPONENT_NAME eigen)
 set_target_properties(Eigen3_Eigen PROPERTIES EXPORT_NAME Eigen)
 install(DIRECTORY ${eigen_SOURCE_DIR}/Eigen DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})

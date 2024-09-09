@@ -3,14 +3,14 @@ function(igl_install module_name)
         return()
     endif()
 
-#    # Check if category is `copyleft` or `restricted`
-#    if(${module_name} MATCHES "^igl_copyleft")
-#        set(suffix "_copyleft") # should work for copyleft as well
-#    elseif(${module_name} MATCHES "^igl_restricted")
-#        set(suffix "_restricted")
-#    else()
-#        set(suffix "")
-#    endif()
+    # Check if category is `copyleft` or `restricted`
+    if(${module_name} MATCHES "^igl_copyleft")
+        set(suffix "_copyleft") # should work for copyleft as well
+    elseif(${module_name} MATCHES "^igl_restricted")
+        set(suffix "_restricted")
+    else()
+        set(suffix "")
+    endif()
 
     ########################
     # Install CMake target #

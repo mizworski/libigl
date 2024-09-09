@@ -24,4 +24,4 @@ target_link_libraries(igl_opengl ${IGL_SCOPE}
 )
 
 # 5. Install target & headers
-#igl_install(igl_opengl ${INC_FILES} ${SRC_FILES})
+igl_install(igl_opengl ${INC_FILES} ${SRC_FILES})
